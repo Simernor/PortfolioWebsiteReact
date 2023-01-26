@@ -1,38 +1,74 @@
 .App {
+  text-align: center; 
+  padding: 50px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+ 
+}
+
+
+.header{
+  border: none;
+  background-color: #000000be;
+  padding-top: 10px;
+  width: 300px;
+}
+
+.todoListMain {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+::placeholder{
+  color: #323131;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todoListMain .header input {
+  padding: 12px;
+  background-color: #ffffff;
+  font-size: 16px;
+  width: 165px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.todoListMain .header button {
+  padding: 8px 20px;
+  font-size: 20px;
+  margin: 10px;
+  background-color: #ffffff;
+  color: #80BF22;
+  border: 2px solid #fcfdfb;
+  border-radius: 5px;
+}
+.todoListMain .header button:hover {
+  background-color: #e8aeb7ce;
+  border: 2px solid #fcfcfb;
+  cursor: pointer;
+}
+.todoListMain .theList {
+  list-style: none;
+  padding-left: 0;
+  width: 250px;
+  padding-bottom: 3px;
+} 
+
+ul.theList {
+  margin: 0 auto;
+}
+
+.todoListMain .theList li {
+  color: #1e1e1e;
+  background-color: #ffffff;
+  padding: 15px;
+  margin-bottom: 15px;
+  
+ 
+  transition: background-color .2s ease-out;
+}
+ 
+.todoListMain .theList li:hover {
+  background-color: #ffffff92;
+  cursor: pointer;
+  border: 2px solid #fcfdfb;
 }
