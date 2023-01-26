@@ -1,49 +1,56 @@
 .App {
-  text-align: center; 
-  padding: 50px;
+  text-align: center;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
- 
 }
 
+body{
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  display: grid;
+}
 
 .header{
   border: none;
-  background-color: #000000be;
-  padding-top: 10px;
-  width: 300px;
 }
 
 .todoListMain {
   text-align: center;
-  display: flex;
+  display: grid;
   justify-content: center;
+  width: 100%;
+  padding-bottom: 10rem;
+  padding-top: 1rem;
+  background-image: linear-gradient(white, black);
 }
 
 ::placeholder{
-  color: #323131;
+  color: white;
 }
 
 .todoListMain .header input {
-  padding: 12px;
-  background-color: #ffffff;
+  padding: 1rem;
+  background-color: black;
   font-size: 16px;
   width: 165px;
   border: none;
   border-radius: 5px;
   margin-bottom: 20px;
+  margin-right: 1rem;
 }
 .todoListMain .header button {
   padding: 8px 20px;
   font-size: 20px;
-  margin: 10px;
   background-color: #ffffff;
   color: #80BF22;
-  border: 2px solid #fcfdfb;
+  background-color: lightblue;
+  border: 2px solid black;
   border-radius: 5px;
+  transition: all, 0.4s;
 }
 .todoListMain .header button:hover {
-  background-color: #e8aeb7ce;
-  border: 2px solid #fcfcfb;
+  background-color: lightgreen;
+  border: 2px solid black;
   cursor: pointer;
 }
 .todoListMain .theList {
@@ -62,8 +69,6 @@ ul.theList {
   background-color: #ffffff;
   padding: 15px;
   margin-bottom: 15px;
-  
- 
   transition: background-color .2s ease-out;
 }
  
@@ -71,4 +76,12 @@ ul.theList {
   background-color: #ffffff92;
   cursor: pointer;
   border: 2px solid #fcfdfb;
+}
+
+.clock{
+  padding-top: 10rem;
+  font-size: larger;
+  display: flex;
+  justify-content: center;
+  color: white;
 }

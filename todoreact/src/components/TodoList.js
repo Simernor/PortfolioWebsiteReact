@@ -4,15 +4,13 @@ function TodoList()  {
         <div className="todoListMain">
           <div className="header">
             <form >
-              <input  placeholder="Vad behöver du göra?">
+              <input placeholder="Vad behöver du göra?">
               </input>
               <button type="submit">+</button>
             </form>
-            
           </div>
-            </div>
+        </div>
     );
 }
-
 
 export default TodoList;
