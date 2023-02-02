@@ -1,12 +1,14 @@
+import NavLinkBtn from './NavLinkBtn'
+
 function NavBar()  {
 	
     return(
-        <div className = "whiteness">
-            <p>Text</p>
-            <p>Text</p>
-            <p>Text</p>
+        <div className = "buttonRow">
+            <div><NavLinkBtn /></div>
+            <div><NavLinkBtn /></div>
+            <div><NavLinkBtn /></div>
         </div>
-    );
+    )
 }
 
 export default NavBar;
