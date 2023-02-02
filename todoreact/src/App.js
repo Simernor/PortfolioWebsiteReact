@@ -1,12 +1,14 @@
 import './App.css';
-import TodoList from './components/TodoList';
-import Clock from './components/Clock'
+import MainBody from './components/MainBody';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <>
-    <TodoList />
-    <Clock />
+    <Header />
+    <MainBody />
+    <Footer />
     </>
   );
 }
